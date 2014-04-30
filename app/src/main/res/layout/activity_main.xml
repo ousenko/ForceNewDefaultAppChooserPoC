@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/changeDefButton"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:text="Make def"
+        />
+    <Button
+        android:id="@+id/testDefaultButton"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:text="test"
+        />
+</LinearLayout>

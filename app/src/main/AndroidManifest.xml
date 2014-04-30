@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.realitybytes.poc.appchooser">
+
+
+    <uses-sdk android:maxSdkVersion="19" android:minSdkVersion="11" android:targetSdkVersion="19"/>
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--This activity does no real job, its' only purpose is to imitate the capability of handling
+        the appropriate intent when enabled-->
+        <activity
+            android:name=".FakeActivity"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
